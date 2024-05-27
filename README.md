@@ -2,7 +2,7 @@
 
 backend api for pandora code test posts
 
-## Installation
+## Development setup
 
 ## Docker setup
 
