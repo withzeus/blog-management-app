@@ -30,7 +30,7 @@ docker-compose up -d
 ## Local setup (frontend)
 
 ```
- popuplate BASE_API_URL field with backend sever url
+ populate BASE_API_URL env with backend sever url
  yarn start
 ```
 
