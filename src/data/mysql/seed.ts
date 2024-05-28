@@ -1,11 +1,10 @@
 import db from "./db";
 import RawSQLQuerys from "./scripts";
 import { getLogger } from "../../internal/helpers";
-import { exit } from "process";
 
 const logger = getLogger();
 
-async function seed() {
+function seed() {
   db.query(`${RawSQLQuerys.CREATE_USERS_TABLE}`, (error) => {
     if (error) {
       console.log(error);
@@ -18,8 +17,6 @@ async function seed() {
       logger.error("FAILED TO CREATE POSTS TABLE");
     }
   });
-
-  exit();
 }
 
 seed();

@@ -70,9 +70,9 @@ class PostsController {
   }
 
   async deletePost(req: IRequest, res: Response) {
-    const { params } = req;
+    const { params, user } = req;
     try {
-      await this.postService.deletePost(params.id);
+      await this.postService.deletePost(params.id, user.user_id);
       res.status(200).json(SUCCESS_RESPONSES.SUCCESS_DELETE_POST);
     } catch (error) {
       res.status(400).json(ERROR_RESPONSES.ERROR_DELETE_POST);

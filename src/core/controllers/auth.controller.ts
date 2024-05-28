@@ -19,9 +19,9 @@ class AuthController {
     try {
       const payload = await userLoginSchema.validate(req.body);
       const token = await this.authService.login(payload);
-      return res.status(201).json({
+      return res.status(200).json({
         status: "OK",
-        token,
+        data: token,
       });
     } catch (error) {
       if (error instanceof ValidationError) {
