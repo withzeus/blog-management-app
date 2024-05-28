@@ -15,8 +15,6 @@ RUN yarn install
 # Copy the rest of the application code
 COPY . .
 
-RUN yarn build
-
 # Expose the application port
 EXPOSE ${SERVER_PORT}
 

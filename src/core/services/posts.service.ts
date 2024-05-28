@@ -61,7 +61,12 @@ class PostService {
     }
   }
 
-  async deletePost(id: string) {
+  async deletePost(id: string, userId: string) {
+    const post = await this.model.findPost(mapObjectToSqlString({ id }));
+
+    if (post.user_id !== userId) {
+      throw new PostNotFoundException();
+    }
     const post_id = await this.model.deletePost([id]);
 
     if (!post_id) {

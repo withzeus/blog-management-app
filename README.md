@@ -4,7 +4,7 @@ backend api for pandora code test posts
 
 ## Development setup
 
-## Docker setup
+## Docker setup (backend)
 
 Use [docker](https://www.docker.com/products/docker-desktop/) for easy setup.
 
@@ -13,7 +13,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-## Local setup
+## Local setup (backend)
 
 ### `*Prerequisites`
 
@@ -23,7 +23,14 @@ docker-compose up -d
  copy .env.example and rename to .env
  set values for `MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE
  yarn install
- yarn db:seed or manually import mysql.example.sql
+ yarn db:seed or manually import mysql.example.sql (start mysql sever first)
+ yarn start
+```
+
+## Local setup (frontend)
+
+```
+ popuplate BASE_API_URL field with backend sever url
  yarn start
 ```
 
