@@ -28,7 +28,7 @@ docker-compose up -d
 ```
 
 ## Local setup (frontend)
-
+`go to client folder ( from root folder cd ./client )`
 ```
  populate BASE_API_URL env with backend sever url
  yarn start
