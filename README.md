@@ -1,6 +1,6 @@
-# Backend
+# code test
 
-backend api for pandora code test posts
+code test project with react frontend and express/mysql backend with auth and posts crud operations
 
 ## Development setup
 
