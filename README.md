@@ -1,10 +1,14 @@
-# code test
+# pandora-code-test
 
-code test project with react frontend and express/mysql backend ( includes auth and crud features )
+React frontend and express/mysql backend ( includes auth and crud features )
 
-## Development setup
+## Prerequisites
 
-## Docker setup (backend)
+Node, Yarn, mySQL sever
+
+### `Development setup`
+
+## `Docker setup (backend)`
 
 Use [docker](https://www.docker.com/products/docker-desktop/) for easy setup.
 
@@ -13,11 +17,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-## Local setup (backend)
-
-### `*Prerequisites`
-
-`nodejs mysql and yarn must be installed`
+## `Local setup (backend)`
 
 ```
  copy .env.example and rename to .env
@@ -28,8 +28,10 @@ docker-compose up -d
 ```
 
 ## Local setup (frontend)
+
 `go to client folder ( from root folder cd ./client )`
-```
+
+```bash
  populate BASE_API_URL env with backend sever url
  yarn start
 ```
