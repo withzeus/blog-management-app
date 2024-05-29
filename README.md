@@ -1,6 +1,6 @@
 # code test
 
-code test project with react frontend and express/mysql backend with auth and posts crud operations
+code test project with react frontend and express/mysql backend ( includes auth and crud features )
 
 ## Development setup
 
