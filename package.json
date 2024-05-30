@@ -7,7 +7,7 @@
     "start": "yarn build && node dist/index.js",
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "rm -rf dist && tsc",
-    "db:seed": "node dist/data/mysql/seed.js"
+    "db:seed": "yarn build && node dist/data/mysql/seed.js"
   },
   "repository": "git@github.com:sithsithsith/pandora.git",
   "author": "zwesithu <withzues@gmail.com>",
