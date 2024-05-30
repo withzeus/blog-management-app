@@ -2,9 +2,20 @@
 
 React frontend and express/mysql backend ( includes auth and crud features )
 
-## Prerequisites
+## Tech Stack
 
-Node, Yarn, mySQL sever
+### Backend
+
+ **Node.js**  
+ **MySQL** 
+
+ ### Frontend
+
+  **React.js** 
+
+ ### Package Manager
+
+  **yarn** 
 
 ### `Development setup`
 
