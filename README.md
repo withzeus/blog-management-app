@@ -1,6 +1,6 @@
 # pandora-code-test
 
-React frontend and express/mysql backend ( includes auth and crud features )
+create, read, update, delete posts with usr authentication.
 
 ## Tech Stack
 
