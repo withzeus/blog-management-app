@@ -17,9 +17,9 @@ React frontend and express/mysql backend ( includes auth and crud features )
 
   **yarn** 
 
-### `Development setup`
+## Development setup
 
-## `Docker setup (backend)`
+### **Docker setup (backend)**
 
 Use [docker](https://www.docker.com/products/docker-desktop/) for easy setup.
 
@@ -28,7 +28,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-## `Local setup (backend)`
+### **Local setup (backend)**
 
 ```
  copy .env.example and rename to .env
@@ -38,7 +38,7 @@ docker-compose up -d
  yarn start
 ```
 
-## Local setup (frontend)
+### **Local setup (frontend)**
 
 `go to client folder ( from root folder cd ./client )`
 
