@@ -1,3 +1,5 @@
+USE ${MYSQL_DATABASE};
+
 CREATE TABLE IF NOT EXISTS users (
     id CHAR(36) PRIMARY KEY,
     username VARCHAR(255),

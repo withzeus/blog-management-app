@@ -19,6 +19,8 @@ services:
       - .env
     volumes:
       - pandora-mysql:/var/lib/mysql
+      - ./mysql-scripts:/docker-entrypoint-initdb.d
+    command: bash -c "chmod +x /docker-entrypoint-initdb.d/init-db.sh && /docker-entrypoint-initdb.d/init-db.sh && docker-entrypoint.sh mysqld"
     healthcheck:
       test: ["CMD-SHELL", "mysqladmin ping -h localhost -u ${MYSQL_USER} -p${MYSQL_PASSWORD}"]
       interval: 30s
