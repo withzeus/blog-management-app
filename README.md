@@ -34,7 +34,7 @@ docker-compose up -d
  copy .env.example and rename to .env
  set values for `MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE
  yarn install
- yarn db:seed or manually import mysql.example.sql (start mysql sever first)
+ yarn db:seed
  yarn start
 ```
 
